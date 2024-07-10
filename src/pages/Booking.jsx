@@ -88,7 +88,7 @@ export const Booking = () => {
       description: "Test Transaction",
       image: "",
       order_id: order.id,
-      callback_url: "https://kgvbsckend-9-7-24.onrender.com/api/paymentverification",
+      callback_url: "https://deluxe-chimera-9f85f8.netlify.app/api/paymentverification",
       prefill: {
         email: email,
         firstname: firstname,

@@ -46,7 +46,7 @@ export const Booking = () => {
 
     try {
       const response = await axios.post(
-        "/vistuser",
+        "https://kgvbsckend-9-7-24.onrender.com/vistuser",
         {
           firstname,
           lastname,
@@ -73,10 +73,10 @@ export const Booking = () => {
 
     const {
       data: { key },
-    } = await axios.get("/api/getkey");
+    } = await axios.get("https://kgvbsckend-9-7-24.onrender.com/api/getkey");
     const {
       data: { order },
-    } = await axios.post("/api/checkout", {
+    } = await axios.post("https://kgvbsckend-9-7-24.onrender.com/api/checkout", {
       amount,
     });
 
@@ -88,7 +88,7 @@ export const Booking = () => {
       description: "Test Transaction",
       image: "",
       order_id: order.id,
-      callback_url: "/api/paymentverification",
+      callback_url: "https://kgvbsckend-9-7-24.onrender.com/api/paymentverification",
       prefill: {
         email: email,
         firstname: firstname,

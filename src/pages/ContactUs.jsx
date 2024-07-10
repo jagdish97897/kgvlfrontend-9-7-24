@@ -43,7 +43,7 @@ import axios from "axios"
     e.preventDefault();
     // mailer();
     try {
-      const response = await axios.post("/register", {
+      const response = await axios.post("https://kgvbsckend-9-7-24.onrender.com/register", {
         name: firstName,
         lastname: lastName,
         email,
